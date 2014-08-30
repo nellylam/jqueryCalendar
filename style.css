@@ -1,0 +1,58 @@
+/******* CALENDAR *******/
+table {
+	margin: 0 auto;
+}
+
+.title {
+	font-size: 42px;
+	color: rgb(240, 140,240);
+	text-align: center;
+}
+
+.classy{
+	border: 1px solid rgb(240,140,240);
+}
+
+th{
+	color: blue;
+}
+
+td{
+	position: relative;
+	width:100px;
+	height:100px;
+}
+
+td:nth-child(even){
+	background-color: rgba(0,0,0,0.1);
+}
+
+td:hover {
+	background-color: rgba(100,100,200,0.5);
+}
+
+.date {
+	position: absolute;
+	top: 2px;
+	left: 2px;
+}
+
+.event {
+	background-color: rgba(190, 100, 100, 0.2);
+	display: block;
+}
+
+.outside {
+	color: rbg(150,150,150);
+}
+
+/******* FORM *******/
+
+form{
+	margin: 15px auto;
+	width: 400px;
+	display: block;
+	padding: 15px;
+	border: 1px solid rgb(240, 140, 240);
+}
+
