@@ -44,11 +44,18 @@ $(document).ready(function() {
 
 		console.log('clicked button!');
 
-		var name = $('[name="eventName"]').val();
+		var nameField = $('[name="eventName"]');
+		var dayField = $('[name="eventDay"]');
 
-		var day = $('[name="eventDay"]').val();
+		var name = nameField.val();
+		var day = dayField.val();
 
 		insertEvent(name, day);
+
+		nameField.val('');
+		dayField.val('');
+
+		$('#myModal').modal('hide')
     });
 
     $('td').on('click', function(event){
@@ -57,6 +64,8 @@ $(document).ready(function() {
 		var day = $(event.target).children('.date').text();
 
 		$('[name="eventDay"]').val(day); //val is a getter/setter
+
+		$('#myModal').modal('toggle');
     });
 
     //initial setup
